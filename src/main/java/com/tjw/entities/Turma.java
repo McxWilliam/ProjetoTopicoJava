@@ -26,8 +26,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name = "tab_turma")
 public class Turma {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	// @Setter(AccessLevel.NONE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	
 	private Long id;
 
 	@Column(nullable = false, unique = true)

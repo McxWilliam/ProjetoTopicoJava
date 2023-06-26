@@ -23,7 +23,6 @@ import lombok.Setter;
 public class Estudante {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
 	private Long id;
 
 	@Column(nullable = false)
@@ -33,8 +32,7 @@ public class Estudante {
 	private String email;
 
 	@ManyToMany(mappedBy = "students", cascade = CascadeType.PERSIST)
-	@JsonIgnore
-	
+	@JsonIgnore	
 	private Set<Turma> classes;
 
 	@Deprecated

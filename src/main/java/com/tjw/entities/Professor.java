@@ -21,8 +21,7 @@ import lombok.Setter;
 @Table(name = "tab_professores")
 public class Professor {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	// @Setter(AccessLevel.NONE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	
 	private Long id;
 
 	@Column(nullable = false)
@@ -34,7 +33,6 @@ public class Professor {
 	@OneToMany(mappedBy = "professor")
 	@JsonIgnore
 	private List<Turma> classes;
-
 	@Deprecated
 	public Professor() {
 	}
