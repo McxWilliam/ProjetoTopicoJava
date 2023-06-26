@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Getter
 @Setter
-@Table(name = "tab_turma")
+@Table(name = "turmas")
 public class Turma {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)	
