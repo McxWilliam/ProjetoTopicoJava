@@ -46,7 +46,7 @@
 
 	<div th:replace="~{fragments/scripts}"></div>
 	<script>
-		fetch('http://localhost:8080/students')
+		fetch('/students')
 			.then(response => response.json())
 			.then(data => {
 				data.forEach(student => {
